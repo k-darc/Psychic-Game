@@ -55,6 +55,11 @@
 
             // Determines which key was pressed.
             var userGuess = event.key.toLowerCase();
+            if (event.which < 65 || event.which > 90) {
+                alert("Only a - z characters are allowed!");
+                return;
+            }
+            
             if (userGuess === computerGuess) {
                 wins++;
                 guessesRemain = 4;
@@ -70,6 +75,8 @@
                         guessChoices = [];
                         guessesRemain = 9;
                         computerGuess = compChoice[Math.floor(Math.random() * compChoice.length)];
+
+                       
             }
 
             //Displays in the screen
