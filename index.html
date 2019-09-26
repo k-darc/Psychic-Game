@@ -62,7 +62,7 @@
             
             if (userGuess === computerGuess) {
                 wins++;
-                guessesRemain = 4;
+                guessesRemain = 9;
                 guessChoices = [];
                 computerGuess = compChoice[Math.floor(Math.random() * compChoice.length)];
             }
@@ -80,6 +80,7 @@
             }
 
             //Displays in the screen
+            //userChoiceText.textContent = "You chose : ";  can't figure out how to wipe the userGuess after you lose or win...
             userChoiceText.textContent = "You chose : " + userGuess;
             winsText.textContent = "Wins : " + wins;
             badGuessText.textContent = "Your Guesses so far : " + guessChoices;
