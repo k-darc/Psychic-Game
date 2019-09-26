@@ -1,0 +1,15 @@
+	*** PSYCHIC GAME ***
+
+-Define an array of letters.
+
+-Choose space in html where the letter guess will appear.
+
+-User presses key. Letter compares to letter the computer chose:
+
+(correct)	-If that letter is the same, add 1 to win.
+
+(incorrect)	-If that letter is NOT the same, reduce guesses.
+		-If guesses = 0 the game adds 1 to losses.
+
+-Restart
+
